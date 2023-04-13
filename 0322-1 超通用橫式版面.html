@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0322-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    body {
+      background: linear-gradient(-30deg, rgb(143, 143, 215), rgb(13, 13, 39))
+        fixed center center / 100% 100%;
+    }
+    .container {
+      margin: 100px 0;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .item {
+      width: 280px;
+      height: 280px;
+      margin: 10px;
+
+      display: flex;
+
+      background-color: rgba(255, 255, 255, 0.6);
+      border: 1px solid #999;
+      box-shadow: 0 10px 30px rgba(0, 0, 50, 0.5);
+    }
+    .item .pic {
+      width: 50%;
+    }
+    .item .pic img {
+      width: 100%;
+      height: 100%;
+      /* 類似background-size，只是是搭配img使用 */
+      object-fit: cover;
+      /* 左右 / 上下 */
+      object-position: center bottom;
+    }
+    .item .txt {
+      width: 50%;
+      padding: 20px;
+
+      display: flex;
+      flex-direction: column;
+    }
+    .item .txt h2 {
+      margin-bottom: 0.4em;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .item .txt p {
+      font-weight: 300;
+      font-size: 10px;
+    }
+    .item .txt .btn {
+      border: 1px solid #888;
+      border-radius: 200px;
+      color: #000;
+      text-decoration: none;
+
+      line-height: 1.5em;
+      /* 跟align-items用法一樣，self可設定單獨物件位置 */
+      align-self: flex-end;
+      /* 等於把上方空間都拿走，相當於靠下對齊 */
+      margin-top: auto;
+      padding: 0 1em;
+    }
+    .item .txt .btn:hover {
+      background-color: #aaa;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="item">
+          <div class="pic">
+            <img src="https://picsum.photos/800/400/?random=21" />
+          </div>
+          <div class="txt">
+            <h2>算是製品又是時間昨。</h2>
+            <p>金屬失望法國一天演出毫無怎樣優勢我也一定會經營許可證，指定。</p>
+            <a href="#" class="btn">more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="https://picsum.photos/800/400/?random=22" />
+          </div>
+          <div class="txt">
+            <h2>算是製品又是時間昨。</h2>
+            <p>
+              金屬失望法國一天演出毫無怎樣優勢我也一定會經營許可證，指定。動物此次簽名施工，小七驚訝，市政府首頁。
+            </p>
+            <a href="#" class="btn">more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="https://picsum.photos/800/400/?random=23" />
+          </div>
+          <div class="txt">
+            <h2>算是製品又是時間昨。</h2>
+            <p>金屬失望法國一天演出毫無怎樣優勢我也一定會經營許可證，指定。</p>
+            <a href="#" class="btn">more</a>
+          </div>
+        </div>
+        <div class="item">
+          <div class="pic">
+            <img src="https://picsum.photos/800/400/?random=24" />
+          </div>
+          <div class="txt">
+            <h2>算是製品又是時間昨。</h2>
+            <p>
+              金屬失望法國一天演出毫無怎樣優勢我也一定會經營許可證，指定。每個人雜誌報紙股東，處罰鈴聲，顯示眼光。
+            </p>
+            <a href="#" class="btn">more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

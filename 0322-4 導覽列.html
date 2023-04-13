@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0322-4</title>
+    <link rel="preconnect" href="#ht方向多年小tps://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    .main-header {
+      background: linear-gradient(0deg, #90b938, #e6e38c);
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .logo {
+      width: 100px;
+    }
+    .logo img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .main-nav {
+      margin: auto;
+
+      display: flex;
+    }
+    .main-nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 1em;
+
+      position: relative;
+
+      transform: translateY(0);
+      transition: 0.3s;
+    }
+    .main-nav a:hover {
+      transform: translateY(5px);
+    }
+    .main-nav a::after {
+      content: "";
+      display: block;
+      border-bottom: 1px solid #fff;
+      width: 0%;
+
+      position: absolute;
+      left: 10px;
+      bottom: -5px;
+
+      transition: 0.3s 0.1s ease-in;
+    }
+    .main-nav a:hover::after {
+      width: 80%;
+    }
+    .header-search {
+      /* 緊密排列 */
+      display: flex;
+    }
+    .header-search input,
+    .header-search button {
+      border: none;
+      background-color: #fff;
+      padding: 5px 10px;
+    }
+    .header-search input:focus,
+    .header-search button:focus {
+      outline: none;
+    }
+    .header-search input {
+      /* 左上，右上，右下，左下 */
+      border-radius: 200px 0 0 200px;
+    }
+    .header-search button {
+      border-radius: 0 200px 200px 0;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./images/capybara.png" alt="logo" />
+        </a>
+        <nav class="main-nav">
+          <a href="#">方向多年小</a>
+          <a href="#">方向多年小</a>
+          <a href="#">方向多年小</a>
+          <a href="#">方向多年小</a>
+        </nav>
+        <form class="header-search">
+          <input type="search" placeholder="搜尋" />
+          <button><i class="bx bx-search"></i></button>
+        </form>
+      </div>
+    </header>
+  </body>
+</html>

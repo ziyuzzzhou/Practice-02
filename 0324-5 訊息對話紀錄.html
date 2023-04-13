@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0324-5</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-color: rgb(107, 188, 211, 0.3);
+    }
+    .dialogue {
+      width: 500px;
+      padding: 30px;
+
+      background-color: #ddd;
+      color: #444;
+      box-shadow: 0 0 15px #6bbcd3;
+      border-radius: 10px;
+    }
+    .user {
+      display: flex;
+      /* 讓對話框自由調整高度 */
+      align-items: flex-start;
+    }
+    .local {
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+    .user .avatar {
+      width: 60px;
+      text-align: center;
+      /* flex特性會使照片因為右邊文字過多而自動縮小，設定shrink為0，照片就不會收縮了 */
+      flex-shrink: 0;
+    }
+    .user .pic {
+      border: 3px solid #6bbcd3;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .user .pic img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .user .txt {
+      padding: 15px;
+      border-radius: 10px;
+
+      position: relative;
+    }
+    .remote .txt {
+      margin-left: 20px;
+      margin-right: 80px;
+
+      background-color: #fff;
+      color: #444;
+    }
+    .local .txt {
+      margin-left: 80px;
+      margin-right: 20px;
+      /* 與.avatar順序顛倒 */
+      order: -1;
+
+      background-color: #6bbcd3;
+      color: #eee;
+    }
+    .remote .txt::before,
+    .local .txt::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+    }
+    .remote .txt::before {
+      left: -12px;
+      border-right: 20px solid #fff;
+    }
+    .local .txt::before {
+      right: -12px;
+      border-left: 20px solid #6bbcd3;
+    }
+  </style>
+  <body>
+    <div class="dialogue">
+      <div class="user remote">
+        <div class="avatar">
+          <div class="pic">
+            <img src="./images/dara.png" alt="dara" />
+          </div>
+          <div>Dara</div>
+        </div>
+        <div class="txt">
+          Hey Rora! It's been a while since last time we met!
+        </div>
+      </div>
+      <div class="user local">
+        <div class="avatar">
+          <div class="pic">
+            <img src="./images/rora.png" alt="rora" />
+          </div>
+          <div>Rora</div>
+        </div>
+        <div class="txt">
+          Hi Dara!!! Sorry, I so busy recently T_T
+        </div>
+      </div>
+      <div class="user remote">
+        <div class="avatar">
+          <div class="pic">
+            <img src="./images/dara.png" alt="dara" />
+          </div>
+          <div>Dara</div>
+        </div>
+        <div class="txt">
+          Never mind!! How about this Friday night? Do you have time~~
+        </div>
+      </div>
+      <div class="user local">
+        <div class="avatar">
+          <div class="pic">
+            <img src="./images/rora.png" alt="rora" />
+          </div>
+          <div>Rora</div>
+        </div>
+        <div class="txt">
+          Oh yes, we could hang out that night.
+        </div>
+      </div>
+      <div class="user remote">
+        <div class="avatar">
+          <div class="pic">
+            <img src="./images/dara.png" alt="dara" />
+          </div>
+          <div>Dara</div>
+        </div>
+        <div class="txt">
+          Hehe, let's decide what to eat for dinner later!
+        </div>
+      </div>
+      <div class="user local">
+        <div class="avatar">
+          <div class="pic">
+            <img src="./images/rora.png" alt="rora" />
+          </div>
+          <div>Rora</div>
+        </div>
+        <div class="txt">
+          Okay, I'll call you after work ^^
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

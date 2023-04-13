@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0320-4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      background-color: rgb(122, 101, 86);
+    }
+    .wrap {
+      width: 1200px;
+      display: flex;
+      margin: auto;
+    }
+    .item {
+      width: 368px;
+      margin: 15px;
+      text-align: center;
+      background-color: #eee4e4;
+      border: 1px solid #ccc;
+
+      transform: translateY(0px);
+      transition: 0.5s;
+    }
+    .item:hover {
+      transform: translateY(-50px);
+    }
+    .item img {
+      width: 100%;
+      vertical-align: bottom;
+    }
+    .item .txt {
+      padding: 20px;
+
+      position: relative;
+    }
+    .item .txt::before {
+      content: "";
+      width: 0;
+      height: 0;
+      left: 0;
+      top: 0;
+      border-top: 50px solid transparent;
+      border-left: 184px solid #eee4e4;
+      border-right: 184px solid #eee4e4;
+
+      position: absolute;
+
+      transform: translateY(-100%);
+    }
+    .item:hover .txt {
+      background-image: linear-gradient(0deg, #fb8076, #feb85d);
+    }
+    .item:hover .txt::before {
+      border-left: 184px solid #feb85d;
+      border-right: 184px solid #feb85d;
+    }
+    .item h2 {
+      border-bottom: 1px solid #888;
+      padding-bottom: 0.3em;
+      margin-bottom: 0.3em;
+      font-weight: 700;
+
+      transition: 0.25s;
+    }
+    .item:hover h2 {
+      color: #fff;
+      border-bottom: #fff;
+    }
+    .item p {
+      line-height: 1.7;
+      font-weight: 300;
+
+      transition: 0.25s;
+    }
+    .item:hover p {
+      color: #fff;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <img src="https://picsum.photos/600/600/?random=12" />
+        <div class="txt">
+          <h2>細胞制度總部</h2>
+          <p>
+            細胞制度總部各自地球，排行榜尤其是，造。細胞制度總部各自地球，排行榜尤其是，造尤其是，造。細胞制度總部各自地球，排行榜尤其是，造。細胞制度總部各自地球，排行榜尤其是，造。細胞制度總部各自地球，排行榜尤其是，造尤其是，造。細胞制度總部各自地球，排行榜尤其是，造。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/600/600/?random=13" />
+        <div class="txt">
+          <h2>細胞制度總部</h2>
+          <p>
+            細胞制度總部各自地球，排行榜尤其是，造。細胞制度總部各自地球，排行榜尤其是，造尤其是，造。細胞制度總部各自地球，排行榜尤其是，造。細胞制度總部各自地球，排行榜尤其是，造。細胞制度總部各自地球，排行榜尤其是，造尤其是，造。細胞制度總部各自地球，排行榜尤其是，造。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="https://picsum.photos/600/600/?random=14" />
+        <div class="txt">
+          <h2>細胞制度總部</h2>
+          <p>
+            細胞制度總部各自地球，排行榜尤其是，造。細胞制度總部各自地球，排行榜尤其是，造尤其是，造。細胞制度總部各自地球，排行榜尤其是，造。細胞制度總部各自地球，排行榜尤其是，造。細胞制度總部各自地球，排行榜尤其是，造尤其是，造。細胞制度總部各自地球，排行榜尤其是，造。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

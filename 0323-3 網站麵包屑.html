@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0323-3</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    body {
+      background-color: #d7d899;
+    }
+    .wrap {
+      padding: 15px 0;
+      background-color: #539561;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    }
+    .breadcrumb {
+      width: 90%;
+      margin: auto;
+      display: flex;
+    }
+    .breadcrumb li {
+      padding: 0 20px;
+    }
+    .breadcrumb li + li {
+      padding-left: 0;
+    }
+    .breadcrumb li + li::before {
+      content: ">";
+      color: #fff;
+      margin-right: 20px;
+    }
+    .breadcrumb a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 100;
+      transition: 0.3s;
+    }
+    .breadcrumb a:hover {
+      color: #d7d899;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <ol class="breadcrumb">
+        <li><a href="#">主頁</a></li>
+        <li><a href="#">產品介紹</a></li>
+        <li><a href="#">限時優惠</a></li>
+        <li><a href="#">全台門市</a></li>
+        <li><a href="#">關於我們</a></li>
+        <li><a href="#">聯繫我們</a></li>
+      </ol>
+    </div>
+  </body>
+</html>

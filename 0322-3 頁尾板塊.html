@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0322-3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- boxicon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    body {
+      background-color: #ccc;
+    }
+    .main-footer {
+      width: 100%;
+      padding: 150px 0 0;
+      background: linear-gradient(150deg, rgb(106, 106, 193), rgb(23, 23, 70));
+    }
+    .container {
+      width: 1200px;
+      margin: auto;
+      
+      display: flex;
+    }
+    .footer-item {
+      width: 0;
+      flex-grow: 1;
+      margin: 0 20px;
+    }
+    .footer-item h4 {
+      font-size: 24px;
+      color: #fff;
+      border-bottom: 1px dotted #fff;
+      margin-bottom: 0.5em;
+      padding-bottom: 0.5em;
+    }
+    .footer-item nav {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-item nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 0;
+
+      transition: .2s;
+    }
+    .footer-item nav a:hover {
+      color: #121238;
+    }
+    .footer-subs form{
+      padding-top: .5em;
+
+      display: flex;
+    }
+    .footer-subs input[type="text"],
+    .footer-subs input[type="submit"]{
+      border: none;
+      padding: 5px 10px;
+    }
+    .footer-subs input[type="text"]{
+      width: 0;
+      flex-grow: 1;
+    }
+    .footer-subs input[type="submit"]{
+      color: #fff;
+      background-color: #121238;
+      cursor: pointer;
+    }
+    .copyright {
+      text-align: center;
+      margin: 150px 0 0;
+      padding: 15px 0;
+      background-color: #121238;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <div class="main-footer">
+      <div class="container">
+        <div class="footer-item">
+          <h4>關於課程</h4>
+          <nav>
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              課程目標</a
+            >
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              課程理念</a
+            >
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              課程宗旨</a
+            >
+          </nav>
+        </div>
+        <div class="footer-item">
+          <h4>課程列表</h4>
+          <nav>
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              網頁入門班</a
+            >
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              RWD深入理解班</a
+            >
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              CSS3互動動畫設計</a
+            >
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              Bootstrap框架實務</a
+            >
+          </nav>
+        </div>
+        <div class="footer-item">
+          <h4>服務項目</h4>
+          <nav>
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              網站建置顧問</a
+            >
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              網站建置設計</a
+            >
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              網站規劃</a
+            >
+            <a href="#">
+              <i class="bx bx-chevron-right"></i>
+              企業教育訓練</a
+            >
+          </nav>
+        </div>
+        <div class="footer-item footer-subs">
+          <h4>訂閱電子報</h4>
+          <form>
+            <input type="text" />
+            <input type="submit" value="訂閱"></input>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &copy; 2023 by Tina Zhou
+      </div>
+    </div>
+  </body>
+</html>

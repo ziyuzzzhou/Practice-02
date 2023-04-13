@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0323-1</title>
+    <link rel="preconnect" href="#ht方向多年小tps://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    .main-header {
+      background: linear-gradient(0deg, #d36adf, #e6e38c);
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .logo {
+      width: 100px;
+      padding-bottom: 20px;
+    }
+    .logo img {
+      width: 100%;
+      vertical-align: top;
+    }
+    .main-nav {
+      margin: auto;
+
+      display: flex;
+    }
+    .main-nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 1em;
+
+      position: relative;
+
+      transform: translateY(0);
+      transition: 0.3s;
+    }
+    .main-nav a:hover {
+      transform: translateY(5px);
+    }
+    .main-nav a::after {
+      content: "";
+      display: block;
+      border-bottom: 1px solid #fff;
+      width: 0%;
+
+      position: absolute;
+      left: 10px;
+      bottom: -5px;
+
+      transition: 0.3s 0.1s ease-in;
+    }
+    .main-nav a:hover::after {
+      width: 80%;
+    }
+  </style>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="./images/capybara.png" alt="logo" />
+        </a>
+        <nav class="main-nav">
+          <a href="#">方向多年小</a>
+          <a href="#">方向多年小</a>
+          <a href="#">方向多年小</a>
+          <a href="#">方向多年小</a>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

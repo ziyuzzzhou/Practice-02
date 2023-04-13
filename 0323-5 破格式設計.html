@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0323-5</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+    @import url(https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css);
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      background: linear-gradient(10deg, #b4c5a2, #88ab60);
+
+      display: flex;
+      align-items: center;
+    }
+    .wrap {
+      /* background-color: #fff; */
+      width: 1200px;
+      margin: auto;
+      padding-top: 80px;
+
+      display: flex;
+    }
+    .item {
+      background-color: #cfcece;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 350px;
+      margin: 0 20px;
+      border: 10px solid #95a484;
+      border-radius: 20px;
+      box-shadow: 10px 10px 20px #95a484;
+    }
+    .item:hover .bx {
+      animation: ss 0.2s infinite linear alternate;
+    }
+    @keyframes ss {
+      0% {
+        transform: rotate(-10deg);
+      }
+      100% {
+        transform: rotate(10deg);
+      }
+    }
+    .icon {
+      background-color: #cfcece;
+      width: 140px;
+      height: 140px;
+      text-align: center;
+      /* 凸排 */
+      margin: -75px 0 0;
+      border-radius: 50%;
+
+      position: relative;
+    }
+    .icon::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      /* 扣掉邊框10px */
+      top: -10px;
+      left: -10px;
+
+      border-radius: 50%;
+      border-top: 10px solid #95a484;
+      border-right: 10px solid #95a484;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent;
+
+      transform: rotate(-45deg);
+    }
+    .icon i {
+      font-size: 70px;
+      color: rgb(67, 85, 65);
+      /* 可用來調整垂直居中 */
+      line-height: 150px;
+    }
+    .txt {
+      text-align: center;
+      padding: 0 20px;
+    }
+    .txt h3 {
+      color: rgb(67, 85, 65);
+      font-size: 30px;
+      font-weight: 500;
+      padding-bottom: 30px;
+      margin-top: 10px;
+    }
+    .txt p {
+      color: rgb(67, 85, 65);
+      font-size: 18px;
+      font-weight: 100;
+      padding-bottom: 30px;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="item">
+        <div class="icon">
+          <i class="bx bx-cool"></i>
+        </div>
+        <div class="txt">
+          <h3>so cool</h3>
+          <p>
+            結婚天下檢查方式經銷商拒絶不少貸款再次國外，模擬為您內地，簡歷更多食品不敢，承。，模擬為您內地，簡歷更多食品不敢，承。，模擬為您內地，簡歷更多食品不敢，承。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <i class="bx bx-happy-heart-eyes"></i>
+        </div>
+        <div class="txt">
+          <h3>so loved</h3>
+          <p>
+            結婚天下檢查方式經銷商拒絶不少貸款再次國外，模擬為您內地，簡歷更多食品不敢，承。，模擬為您內地，簡歷更多食品不敢，承。，模擬為您內地，簡歷更多食品不敢，承。
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="icon">
+          <i class="bx bx-wink-tongue"></i>
+        </div>
+        <div class="txt">
+          <h3>so amazed</h3>
+          <p>
+            結婚天下檢查方式經銷商拒絶不少貸款再次國外，模擬為您內地，簡歷更多食品不敢，承。，模擬為您內地，簡歷更多食品不敢，承。，模擬為您內地，簡歷更多食品不敢，承。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

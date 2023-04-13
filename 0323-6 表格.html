@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0323-6</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      
+      background: linear-gradient(900deg, #95accc, #52617c);
+    }
+    .table {
+      width: 800px;
+      margin: auto;
+    }
+    .table caption {
+      caption-side: bottom;
+      text-align: right;
+      padding: 10px;
+      font-weight: 300;
+      color: #eee;
+    }
+    .table table {
+      width: 100%;
+      border: 3px double #666;
+      border-radius: 10px;
+      background-color: #ccc;
+    }
+    .table thead th:first-child {
+      /* 左上，右上，右下，左下 */
+      border-radius: 7px 0 0 0;
+    }
+    .table thead th:last-child {
+      border-radius: 0 7px 0 0;
+    }
+    .table tbody tr:nth-child(even) {
+      background-color: #888;
+      color: #ddd;
+    }
+    .table tbody tr:hover {
+      background-color: rgb(213, 219, 155);
+      color: #000;
+    }
+    .table th {
+      font-weight: 700;
+      border: 1px solid #666;
+      padding: 6px 10px;
+      
+      background-color: #555;
+      color: #eee;
+    }
+    .table td {
+      font-weight: 300;
+      border: 1px solid #666;
+      padding: 6px 10px;
+    }
+    .table tfoot td:first-child {
+      border-radius: 0 0 0 7px;
+    }
+    .table tfoot td:last-child {
+      border-radius: 0 0 7px 0;
+    }
+  </style>
+  <body>
+    <div class="table">
+      <table>
+        <caption>
+          我是 table caption!!!
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">html</th>
+            <th scope="col">css</th>
+            <th scope="col">rwd</th>
+            <th scope="col">js</th>
+            <th scope="col">jquery</th>
+            <th scope="col">bootstrap</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+          <tr>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+            <td>敬請期待</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Contact me</td>
+            <td colspan="5">
+              E-mail:
+              <a href="#">gigo860523@gmail.com</a>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0406-2</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    body {
+      background-color: #999;
+    }
+    ul {
+      width: 960px;
+      margin: auto;
+      padding: 300px 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      color: rgb(194, 235, 235);
+      font-size: 25px;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      line-height: 200px;
+      /* outline: 1px solid #cc99ff; */
+      /* (960/3-200)/2=60 */
+      /* -40打開F12去拉看看 */
+      margin: 0 60px -40px;
+
+      position: relative;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      outline: 1px solid #11ff99;
+      transform: rotate(45deg);
+      z-index: -2;
+    }
+    /* 從0開始代入n */
+    li:nth-child(n + 4) {
+      /* 160打開F12去拉看看 */
+      left: 160px;
+    }
+    li:nth-child(n + 7) {
+      left: 0;
+    }
+    li:hover {
+      color: #555;
+    }
+    li:hover::before {
+      background-color: rgb(190, 190, 140);
+    }
+  </style>
+  <body>
+    <ul>
+      <li class="box1">老大</li>
+      <li class="box2">二寶</li>
+      <li class="box3">三寶</li>
+      <li class="box4">四寶</li>
+      <li class="box5">五寶</li>
+      <li class="box6">六寶</li>
+      <li class="box7">七寶</li>
+      <li class="box8">八寶</li>
+      <li class="box9">老么</li>
+    </ul>
+  </body>
+</html>

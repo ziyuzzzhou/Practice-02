@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- icon from fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/d53af43be7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>0324-2</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    html,
+    body {
+      height: 100%;
+    }
+    body {
+      background-color: #888;
+    }
+    .side-menu {
+      width: 300px;
+      height: 100%;
+      padding: 50px 0;
+      box-sizing: border-box;
+
+      background: linear-gradient(180deg, #c9d076, #8d9959);
+      box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
+
+      display: flex;
+      flex-direction: column;
+
+      position: relative;
+      transform: translateX(-100%);
+      transition: 0.3s;
+    }
+    .side-menu form {
+      display: flex;
+
+      margin: 0 25px 35px;
+      border-radius: 100px;
+      border: 1.5px solid #fff;
+    }
+    .side-menu form input,
+    .side-menu form button {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+    }
+    .side-menu form input {
+      width: 230px;
+      outline: none;
+    }
+    .side-menu form button {
+      width: 50px;
+      cursor: pointer;
+    }
+    .side-menu .nav a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+
+      position: relative;
+    }
+    .side-menu .nav li + li a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      border-top: 1px solid #fff;
+    }
+    .side-menu .nav a .fa-solid {
+      margin-right: -1.1em;
+      transform: scale(0);
+
+      transition: 0.3s;
+    }
+    .side-menu .nav li:hover .fa-solid {
+      margin-right: 0;
+      transform: scale(1);
+    }
+    /* 這裡有無加>a一樣 */
+    .side-menu .nav li:hover > a {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .side-menu .nav a span {
+      margin-left: 10px;
+    }
+    .side-menu .nav li {
+      position: relative;
+    }
+    .side-menu .nav li ul {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 250px;
+
+      background-color: rgba(187, 211, 126, 0.2);
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+      display: none;
+    }
+    .side-menu .nav li:hover > ul {
+      display: block;
+    }
+    .side-menu label {
+      width: 30px;
+      height: 70px;
+      background-color: #444;
+      color: #fff;
+      border-radius: 0 10px 10px 0;
+
+      position: absolute;
+      right: -30px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+      line-height: 70px;
+      text-align: center;
+    }
+    #side-menu-switch {
+      /* fixed or absolute都可 */
+      position: fixed;
+      opacity: 0;
+      /* 保險起見可加順位為負數 */
+      z-index: -10;
+    }
+    #side-menu-switch:checked + .side-menu {
+      transform: translateX(0);
+    }
+    #side-menu-switch:checked + .side-menu label i {
+      /* 以下兩種都可 */
+      /* transform: scale(-1); */
+      transform: rotate(-180deg);
+    }
+  </style>
+  <body>
+    <input type="checkbox" id="side-menu-switch" />
+    <div class="side-menu">
+      <form action="">
+        <input type="search" placeholder="請輸入關鍵字" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      <ul class="nav">
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-house"></i>
+            <span>主頁</span>
+          </a>
+          <ul>
+            <li>
+              <a href="#">page 1</a>
+              <ul>
+                <li><a href="#">surprise!!!</a></li>
+                <li><a href="#">surprise!!!</a></li>
+                <li><a href="#">surprise!!!</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">page 2</a>
+              <ul>
+                <li><a href="#">surprise!!!</a></li>
+                <li><a href="#">surprise!!!</a></li>
+                <li><a href="#">surprise!!!</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">page 3</a>
+              <ul>
+                <li><a href="#">surprise!!!</a></li>
+                <li><a href="#">surprise!!!</a></li>
+                <li><a href="#">surprise!!!</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">page 4</a>
+              <ul>
+                <li><a href="#">surprise!!!</a></li>
+                <li><a href="#">surprise!!!</a></li>
+                <li><a href="#">surprise!!!</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-list"></i>
+            <span>產品介紹</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-heart"></i>
+            <span>服務介紹</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-sharp fa-solid fa-comment"></i>
+            <span>關於我們</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-phone"></i>
+            <span>聯繫我們</span>
+          </a>
+        </li>
+      </ul>
+      <!-- 控制上方input -->
+      <label for="side-menu-switch">
+        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+      </label>
+    </div>
+  </body>
+</html>

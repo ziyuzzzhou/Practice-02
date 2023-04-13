@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0320-2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    .banner {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(
+            /* 斜度 */ 120deg,
+            rgb(172, 147, 174) 50%,
+            transparent 50%
+          )
+          /* 後面%代表width & height */ center center / 100% 100%,
+        url("https://picsum.photos/1300/800/?random=60") right center / auto
+          100%;
+    }
+    .container {
+      width: 100%;
+      max-width: 1440px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+    }
+    .banner-txt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .banner-txt h1 {
+      border-bottom: 1px solid #333;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      font-size: 80px;
+      font-weight: 700;
+      width: 90%;
+    }
+    .banner-txt h1 small {
+      display: block;
+      font-size: 70px;
+      font-weight: 500;
+    }
+    .banner-txt h2 {
+      font-size: 50px;
+      font-weight: 300;
+    }
+    .banner-txt p {
+      font-size: 20px;
+      font-weight: 100;
+    }
+  </style>
+  <body>
+    <div class="banner">
+      <div class="container">
+        <div class="banner-txt">
+          <h1>
+            表示突出你
+            <small>並不是軟體首</small>
+          </h1>
+          <h2>不需要尊重各個</h2>
+          <p>
+            城市原本來說後悔幾天瞭解居住刺激價格思維用戶，到。
+            <br />
+            名稱存在方案格式面向收藏，關西作為，電。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
