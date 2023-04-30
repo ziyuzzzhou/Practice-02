@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0428-3</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    .container {
+      width: 1200px;
+      margin: auto;
+      padding: 100px 0;
+    }
+    .container h1 {
+      color: #aaa;
+      font-size: 80px;
+      font-weight: 500;
+      text-align: left;
+
+      box-sizing: border-box;
+      padding: 0 15px;
+      margin-bottom: 25px;
+
+      position: relative;
+    }
+    .container h1::after {
+      content: "";
+      display: block;
+      background-color: #eee;
+      box-sizing: border-box;
+      width: 97%;
+      height: 60px;
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -2;
+    }
+    .container .txt {
+      box-sizing: border-box;
+      padding: 0 15px;
+
+      column-count: 2;
+      column-gap: 30px;
+    }
+    .container .txt p {
+      line-height: 2;
+      padding: 0 10px;
+    }
+    .container .txt p:first-letter {
+      font-size: 40px;
+      float: left;
+      padding-right: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>CSS IS AWESOME!</h1>
+      <div class="txt">
+        <p>
+          Psum dolor sit, amet consectetur adipisicing elit. Veniam unde ab,
+          optio porro officiis ullam nam dolores laboriosam id deleniti totam
+          reprehenderit sint odit, excepturi nihil, architecto tempore ea
+          voluptates.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          aut quod, id, consectetur recusandae earum excepturi dignissimos animi
+          facere quas numquam vitae adipisci error labore iure libero eius
+          eveniet eaque? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit?
+        </p>
+        <p>
+          Rseprehenderit sint odit, excepturi nihil, architecto tempore ea
+          voluptates! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Cupiditate impedit maiores laboriosam aut blanditiis aliquammaiores
+          laboriosam aut blanditiis aliquam.
+        </p>
+        <p>
+          Eem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+          consectetur sunt necessitatibus. Accusamus, aspernatur qui!
+          Recusandae, consequatur? Eligendi eum exercitationem perspiciatis,
+          quae soluta vel alias odio minima sit eos fugit.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0430-2</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    .wrap {
+      margin: 100px 0;
+    }
+    .container {
+      width: 1200px;
+      margin: auto;
+
+      position: relative;
+
+      display: flex;
+      justify-content: flex-end;
+
+      box-shadow: 0 0 20px #ccc;
+      overflow: hidden;
+    }
+    .container h1 {
+      color: rgba(150, 150, 150, 0.3);
+      font-size: 128px;
+
+      flex-shrink: 0;
+
+      box-sizing: border-box;
+      width: 100px;
+      padding-left: 20px;
+
+      position: absolute;
+      left: 0;
+      top: -50px;
+      line-height: 1.15em;
+      /* 不同效果 (重疊) */
+      /* top: 50px;
+      line-height: 0.6; */
+      z-index: -2;
+    }
+    .container .txt {
+      flex-shrink: 0;
+
+      box-sizing: border-box;
+      width: 800px;
+      padding: 15px;
+
+      column-count: 2;
+      column-gap: 20px;
+    }
+    .container .txt p {
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 1em;
+    }
+    .container .txt p:first-child:first-letter {
+      font-size: 40px;
+      float: left;
+      padding-right: 10px;
+    }
+  </style>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <h1>CSS IS AWESOME!</h1>
+        <div class="txt">
+          <p>
+            Psum dolor sit, amet consectetur adipisicing elit. niti totam
+            reprehenderit sint odit, excepturi nihil, architecto tempore ea
+            voluptates.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            aut quod, id, consectetur recusandae earum excepturi dignissimos
+            animi f adipisicing elit?
+          </p>
+          <p>
+            Rseprehenderit sint odit, excepturi nihil, architecto tempore ea
+            voluptates! Lorem, ipsum dolor sit amet conboriosam aut blanditiis
+            aliquam.
+          </p>
+          <p>
+            Eem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+            consectetur sunt necessitatibus. Accusamus, aspernaturel alias odio
+            minima sit eos fugit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0428-1</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    .container {
+      width: 1200px;
+      margin: auto;
+      padding: 100px 0;
+
+      display: flex;
+      column-gap: 18px;
+    }
+    .container h1 {
+      background-color: #d5c7b9;
+      text-align: right;
+
+      box-sizing: border-box;
+      width: 400px;
+      padding: 15px;
+    }
+    .container h1::after {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 5.5em;
+      background-color: #000;
+      margin-left: auto;
+    }
+    .container .txt {
+      box-sizing: border-box;
+      width: 800px;
+      padding: 15px;
+
+      /* 文字排版column很好用 */
+      column-count: 2;
+      column-gap: 30px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>CSS IS AWESOME!</h1>
+      <div class="txt">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam unde
+          ab, optio porro officiis ullam nam dolores laboriosam id deleniti
+          totam reprehenderit sint odit, excepturi nihil, architecto tempore ea
+          voluptates! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Cupiditate impedit maiores laboriosam aut blanditiis aliquam, magnam
+          error minima perferendis distinctio nostrum iusto accusamus quidem
+          animi quisquam sit molestias totam adipisci.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          aut quod, id, consectetur recusandae earum excepturi dignissimos animi
+          facere quas numquam vitae adipisci error labore iure libero eius
+          eveniet eaque? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Rem itaque sit ipsum debitis veniam eos a, provident, voluptate
+          aut officiis eaque molestiae, inventore velit voluptates repudiandae
+          maxime. Magni, odio molestias?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

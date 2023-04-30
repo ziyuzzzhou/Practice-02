@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0428-5</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+    .container {
+      width: 1200px;
+      margin: auto;
+      padding: 100px 0;
+    }
+    .container h1 {
+      color: #aaa;
+      font-size: 90px;
+      box-sizing: border-box;
+      width: 400px;
+      padding: 15px;
+
+      float: right;
+      margin-left: 25px;
+
+      position: relative;
+    }
+    .container h1::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      z-index: -2;
+
+      width: 200px;
+      height: 200px;
+      border: 20px solid #eee;
+    }
+    .container .txt {
+      column-count: 2;
+      column-gap: 20px;
+    }
+    .container .txt p {
+      line-height: 1.5;
+      margin-bottom: 1em;
+    }
+    .container .txt p:first-child:first-letter {
+      font-size: 40px;
+      float: left;
+      padding-right: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>CSS IS AWESOME!</h1>
+      <div class="txt">
+        <p>
+          Psum dolor sit, amet consectetur adipisicing elit. Veniam unde ab,
+          optio porro officiis ullam nam dolores laboriosam id deleniti totam
+          reprehenderit sint odit, excepturi nihil, architecto tempore ea
+          voluptates.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          aut quod, id, consectetur recusandae earum excepturi dignissimos animi
+          facere quas numquam vitae adipisci error labore iure libero eius
+          eveniet eaque? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit?
+        </p>
+        <p>
+          Rseprehenderit sint odit, excepturi nihil, architecto tempore ea
+          voluptates! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Cupiditate impedit maiores laboriosam aut blanditiis aliquammaiores
+          laboriosam aut blanditiis aliquam.
+        </p>
+        <p>
+          Eem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
+          consectetur sunt necessitatibus. Accusamus, aspernatur qui!
+          Recusandae, consequatur? Eligendi eum exercitationem perspiciatis,
+          quae soluta vel alias odio minima sit eos fugit.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
